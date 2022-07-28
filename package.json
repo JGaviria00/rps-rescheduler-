@@ -1,0 +1,48 @@
+{
+  "name": "rps-rescheduler",
+  "description": "RPS Scheduler command",
+  "version": "0.0.1",
+  "author": "John Giraldo @jgcondor",
+  "bin": {
+    "rps-rescheduler": "./bin/run"
+  },
+  "bugs": "https://github.com/jgcondor/rps-rescheduler/issues",
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@oclif/test": "^1.2.8",
+    "chai": "^4.3.4",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/jgcondor/rps-rescheduler",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "rps-rescheduler"
+  },
+  "repository": "jgcondor/rps-rescheduler",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme && oclif-dev readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.3",
+    "axios": "^0.23.0"
+  }
+}

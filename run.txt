@@ -1,0 +1,1 @@
+./bin/run -e prod -f ./data/data.json
